@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - The Blue Pages</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Tailwind Colors */
+        :root {
+            --color-cerulean: #007BA7;
+            --color-steel-blue: #4682B4;
+            --color-navy-blue: #000080;
+            --color-midnight-blue: #191970;
+            --color-medium-blue: #0000CD;
+            --color-ice-blue: #A7D7EE;
+        }
+
+        .bg-cerulean { background-color: var(--color-cerulean); }
+        .text-cerulean { color: var(--color-cerulean); }
+        .hover\:bg-cerulean-darker:hover { background-color: #006A93; }
+
+        .bg-steel-blue { background-color: var(--color-steel-blue); }
+        .text-steel-blue { color: var(--color-steel-blue); }
+        .hover\:bg-steel-blue-darker:hover { background-color: #3A6A92; }
+
+        .bg-navy-blue { background-color: var(--color-navy-blue); }
+        .text-navy-blue { color: var(--color-navy-blue); }
+
+        .bg-midnight-blue { background-color: var(--color-midnight-blue); }
+        .text-midnight-blue { color: var(--color-midnight-blue); }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F0F8FF; /* Lightest blue for overall background */
+        }
+
+        /* Custom scrollbar for aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-steel-blue);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-cerulean);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-navy-blue text-white p-4 shadow-lg">
+            <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+                <h1 class="text-4xl font-extrabold tracking-tight mb-2 md:mb-0">The Blue Pages</h1>
+                <!-- Navigation -->
+                <nav class="flex flex-wrap justify-center md:justify-end gap-2 md:gap-4">
+                    <a href="index.html" class="px-4 py-2 rounded-full bg-cerulean hover:bg-cerulean-darker transition duration-300 ease-in-out text-sm font-semibold">Back to Home</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content Area - About Me -->
+        <main class="container mx-auto flex-grow p-4 md:p-8">
+            <div class="bg-white p-6 rounded-lg shadow-md border-l-8 border-steel-blue">
+                <h2 class="text-3xl font-bold text-midnight-blue mb-4 border-b-2 border-midnight-blue pb-2">About Me</h2>
+
+                <div class="prose max-w-none text-gray-700 leading-relaxed">
+                    <p>Welcome to The Blue Pages! I'm Tulika Sharma, the creator and sole author of this blog. I started this space as a personal outlet to share my thoughts and passions across a variety of topics that resonate with me.</p>
+
+                    <h3 class="text-2xl font-semibold text-steel-blue mt-6 mb-3">My Interests</h3>
+                    <p>My interests are quite diverse, which is why you'll find a range of categories here:</p>
+                    <ul class="list-disc list-inside ml-4">
+                        <li><strong>Cricket (Cerulean):</strong> As a fervent follower of the sport, I love to delve into match analyses, player performances, historical moments, and the evolving strategies of cricket.</li>
+                        <li><strong>Philosophy (Verglas):</strong> I enjoy exploring philosophical concepts, their relevance in modern life, and how different schools of thought can offer new perspectives on everyday challenges.</li>
+                        <li><strong>Society & Culture (Lapis):</strong> This section is dedicated to observations and discussions on current societal trends, cultural phenomena, and their impact on our lives.</li>
+                        <li><strong>Books & Literature (Indigo):</strong> A lifelong reader, I share my reviews, interpretations, and recommendations for both classic and contemporary works of literature.</li>
+                        <li><strong>Movies & TV (Midnight):</strong> From cinematic masterpieces to binge-worthy series, I discuss storytelling, character development, and the art of visual narrative.</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold text-steel-blue mt-6 mb-3">My Vision for The Blue Pages</h3>
+                    <p>My goal with The Blue Pages is to create a thoughtful and engaging space where I can express my ideas and hopefully spark interesting conversations. I believe in the power of sharing perspectives and learning from one another.</p>
+                    <p>Thank you for visiting, and I hope you find something here that interests, entertains, or inspires you!</p>
+
+                    <p class="mt-8 text-sm text-gray-500">
+                        For any inquiries, feel free to reach out at tulikashr@gmail.com.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-midnight-blue text-white p-6 mt-8 shadow-inner">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2025 The Blue Pages. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
